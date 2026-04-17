@@ -2,6 +2,8 @@
 
 Local dashboard for people who keep several Codex / ChatGPT accounts on one machine and want one place to watch their remaining limits.
 
+![Codex Profile Board preview](docs/preview.png)
+
 ## What it does
 
 - keeps every profile in its own isolated `HOME`
