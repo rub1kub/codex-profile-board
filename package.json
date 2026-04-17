@@ -1,0 +1,35 @@
+{
+  "name": "codex-profile-board",
+  "version": "0.3.0",
+  "private": false,
+  "type": "module",
+  "description": "Local board for isolated Codex profiles, browser-first login, and usage limit tracking.",
+  "keywords": [
+    "codex",
+    "openai",
+    "chatgpt",
+    "dashboard",
+    "usage",
+    "limits"
+  ],
+  "author": "Dmitry Puzik",
+  "homepage": "https://github.com/rub1kub/codex-profile-board#readme",
+  "bugs": {
+    "url": "https://github.com/rub1kub/codex-profile-board/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rub1kub/codex-profile-board.git"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "playwright-core": "^1.59.1"
+  },
+  "license": "MIT"
+}

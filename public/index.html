@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codex Usage Board</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel board">
+        <div class="board-toolbar">
+          <div class="board-preferences">
+            <label class="toolbar-select">
+              <span id="theme-label">Тема</span>
+              <select id="theme-select">
+                <option value="system">Системная</option>
+                <option value="light">Светлая</option>
+                <option value="dark">Темная</option>
+              </select>
+            </label>
+            <label class="toolbar-select">
+              <span id="language-label">Язык</span>
+              <select id="language-select">
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+              </select>
+            </label>
+          </div>
+          <button id="connect-account">Добавить аккаунт</button>
+          <button id="refresh-state" class="secondary">Обновить</button>
+        </div>
+        <div id="profiles" class="profile-list"></div>
+      </section>
+    </main>
+
+    <div id="login-modal" class="modal-shell is-hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
+        <button id="login-modal-close" class="modal-close secondary" type="button">Закрыть</button>
+        <p class="modal-eyebrow">Вход в Codex</p>
+        <h2 id="login-modal-title">Подготавливаем авторизацию</h2>
+        <p id="login-modal-message" class="modal-copy">Ждём код входа…</p>
+        <div class="modal-code-wrap">
+          <button id="login-modal-code" class="modal-code" type="button">••••-••••</button>
+        </div>
+        <p id="login-modal-timer" class="modal-timer">Новая вкладка откроется автоматически.</p>
+        <p id="login-modal-hint" class="modal-hint">Нажмите на код, чтобы скопировать его.</p>
+        <a id="login-modal-link" class="modal-link" href="#" target="_blank" rel="noreferrer noopener">Открыть вкладку вручную</a>
+      </section>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
